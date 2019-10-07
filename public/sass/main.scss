@@ -1,0 +1,81 @@
+@import '_vars';
+@import 'modules/navbar';
+@import 'modules/footer';
+
+
+main {
+    width: 100%;
+    overflow: hidden;
+    background-color: $bg-color;  
+}
+body{
+    font-family: "Kollektif";
+    src: url("../css/Kollektif.ttf");
+    line-height: 1.15em;
+    font-family: 'Kollektif';
+    src: url('Kollektif-Bold.ttf')format('ttf');
+    font-family: 'Kollektif';
+    src: url('Kollektif-italic.ttf')format('ttf');
+}
+
+#product-logo {
+    margin-top: 80px;
+    width: 90%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    img {
+        width:90%;
+    }
+
+}
+
+#video-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+
+    video {
+        width: 100%;
+    }
+}
+
+#buy-it {
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    width: 90%;
+    justify-content: space-around;
+}
+
+#discription, #specs {
+    width:85%;
+    margin:auto;
+}
+
+h4 {padding-bottom: 10px; padding-top: 10px; color: $main-color;}
+
+.image-container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    overflow: scroll;
+    width: 95%;
+    margin: auto;
+    justify-content: flex-start; 
+
+    img {
+        width:80%;
+        padding: 5px;
+    }
+
+}
+
+
+
+.hidden { display: $hide; }

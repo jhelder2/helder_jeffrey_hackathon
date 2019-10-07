@@ -1,0 +1,25 @@
+{
+  "name": "intronode",
+  "version": "1.0.0",
+  "description": "intro to node",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhelder2/introNode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhelder2/introNode/issues"
+  },
+  "homepage": "https://github.com/jhelder2/introNode#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.5",
+    "mysql": "^2.17.1"
+  }
+}

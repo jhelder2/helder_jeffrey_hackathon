@@ -119,6 +119,9 @@ body {
   #buy-it a {
     text-decoration: none;
     color: black; }
+  @media screen and (min-width: 640px) {
+    #buy-it {
+      font-size: 1.4em; } }
 
 #discription, #specs {
   width: 85%;

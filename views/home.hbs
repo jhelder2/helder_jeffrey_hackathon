@@ -1,6 +1,39 @@
-<div class="home-view">
-    <h1>{{ homemessage }}</h1>
-    <p>
-        {{ bio }}
-    </p>
-</div>
+        <main>
+
+            <div id="product-logo">
+                <img src="{{Logo}}" alt="thermoSercurity logo">
+            </div>
+
+            <div id="video-container">
+                <video loop controls > 
+                <source src="{{Video}}" type="video/mp4"></video>
+            </div>
+
+			<div id="buy-it">
+                <div id="price"> {{ Price }} </div>
+                <div id="cart"><a href="#">Add to cart</a></div>
+            </div>
+
+			<div id="discription">
+				<h4>Description</h4>
+                <p> {{Description}}
+				</p>
+            </div>
+
+            <div class="image-container">
+				<img src="{{Picture1}}" alt="">
+				<img src="{{Picture2}}" alt="">
+				<img src="{{Picture3}}" alt="">
+				<img src="{{Picture4}}" alt="">
+				<img src="{{Picture5}}" alt="">
+				<img src="{{Picture6}}" alt="">
+			</div>
+
+            <div id="specs">
+				<h4>Technical</h4>
+				<p>
+                    {{technical}}
+				</p>
+			</div>
+
+        </main>          

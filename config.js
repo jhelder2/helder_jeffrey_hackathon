@@ -3,7 +3,7 @@ const config = {
     upass: "",//root for mac
     port: 3306,//8889 for mac
     host: "localhost",
-    db: "bizcard"
+    db: "hackathon",
 }
 
 module.exports = config;

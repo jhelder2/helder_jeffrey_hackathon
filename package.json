@@ -1,22 +1,22 @@
 {
-  "name": "intronode",
+  "name": "hackathon",
   "version": "1.0.0",
-  "description": "intro to node",
+  "description": "hackathon",
   "main": "app.js",
   "scripts": {
     "start": "node app"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jhelder2/introNode.git"
+    "url": "git+https://github.com/jhelder2/helder_jeffrey_hackathon.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jhelder2/introNode/issues"
+    "url": "https://github.com/jhelder2/helder_jeffrey_hackathon/issues"
   },
-  "homepage": "https://github.com/jhelder2/introNode#readme",
+  "homepage": "https://github.com/jhelder2/helder_jeffrey_hackathon#readme",
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.0.5",

@@ -11,12 +11,12 @@ app.use(express.static('public'));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname + "/views"));
 
-app.get('/', (req, res) => {
+app.get('/users', (req, res) => {
   res.render('home', {homemessage:"hey there", bio: "anything"});
 })
 
-app.get('/users', (req,res) => {
-  // get user data when we hit this rout
+app.get('/', (req,res) => {
+  // get user data when we hit this route
 
   //try database connection
   //if connection fails, log error(s) to console and quit
@@ -26,7 +26,7 @@ app.get('/users', (req,res) => {
       return console.log(err.message);
     }
 
-    let query = "SELECT * FROM tbl_card";
+    let query = "SELECT * FROM tbl_product";
 
     sql.query(query, (err, rows) => {
       //finnished with db now let someone else use it
@@ -36,7 +36,7 @@ app.get('/users', (req,res) => {
 
       console.log(rows);
 
-      res.render('user', rows[1]);
+      res.render('home', rows[0]);
     })
   })
 })
@@ -44,18 +44,3 @@ app.get('/users', (req,res) => {
 app.listen(port, () => {
 console.log(`app is running on port ${port}`);
 })
-
-// const http = require('http');
-
-// const hostname = '127.0.0.1';//local host
-// const port = process.env.PORT || 3000; //this is a node convention
-
-// const server = http.createServer((req, res) => {
-//   res.statusCode = 200;
-//   res.setHeader('Content-Type', 'text/plain');
-//   res.end('Hello World\n');
-// });
-
-// server.listen(port, hostname, () => {
-//   console.log(`Server running at http://${hostname}:${port}/`);
-// });

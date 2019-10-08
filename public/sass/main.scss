@@ -16,6 +16,7 @@ body{
     src: url('Kollektif-Bold.ttf')format('ttf');
     font-family: 'Kollektif';
     src: url('Kollektif-italic.ttf')format('ttf');
+
 }
 
 #product-logo {
@@ -28,6 +29,11 @@ body{
     align-items: center;
     align-content: center;
 
+    @media screen and (min-width: 640px){
+        margin:140px auto 0;
+        width: 40%;
+        }
+
     img {
         width:90%;
     }
@@ -36,6 +42,7 @@ body{
 
 #video-container {
     width: 100%;
+    max-width: 1280px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -51,11 +58,17 @@ body{
     margin-top: 20px;
     width: 90%;
     justify-content: space-around;
+
+    a {text-decoration: none; color: black;}
 }
 
 #discription, #specs {
     width:85%;
     margin:auto;
+    @media only screen and (min-width: 640px){
+        font-size: 1.4em;
+        line-height: 1.20em;
+    }
 }
 
 h4 {padding-bottom: 10px; padding-top: 10px; color: $main-color;}
@@ -69,9 +82,19 @@ h4 {padding-bottom: 10px; padding-top: 10px; color: $main-color;}
     margin: auto;
     justify-content: flex-start; 
 
+    @media screen and (min-width: 640px){
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: hidden;
+        }
+
     img {
         width:80%;
         padding: 5px;
+
+        @media screen and (min-width: 640px){
+        width: 30%;
+        }
     }
 
 }

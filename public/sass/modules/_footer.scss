@@ -14,6 +14,10 @@ footer {
         flex-direction: column;
         justify-content: space-between;
 
+        @media only screen and (min-width: 570px){
+            flex-direction: row;
+        }
+
         li {
             margin: 0 10px;
             text-align: center;
@@ -23,7 +27,8 @@ footer {
             }
         }
     }
+
    
 }
-#copy {display: flex; width:100%; justify-content: center;}
+ #copy {display: flex; width:100%; justify-content: center;}
 
